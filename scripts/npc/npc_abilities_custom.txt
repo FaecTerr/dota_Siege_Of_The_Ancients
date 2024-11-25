@@ -1,0 +1,295 @@
+// Dota Heroes File
+"DOTAAbilities"
+{
+	"Version"		"1"
+	
+	"ability_capture_lua"
+	{
+    	"BaseClass"                     "ability_lua"
+    	"ScriptFile"                    "abilities/ability_capture"
+    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+    	"AbilityUnitTargetType"         "DOTA_UNIT_TARGET_BASIC"
+    	"AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    	"AbilityCastAnimation"          "ACT_DOTA_GENERIC_CHANNEL_1"
+    	"AbilityTextureName"            "ability_capture_lua"   
+    	"IsOnCastBar"                   "0"
+    	"MaxLevel"                      "1"
+    	"AbilityCastRange"              "150"
+	}
+	
+	"ability_pocket_shop"
+	{
+		"BaseClass"                     "ability_lua"
+    	"ScriptFile"                    "abilities/ability_pocket_shop"
+    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    	"AbilityUnitTargetType"         "DOTA_UNIT_TARGET_FLAG_NONE"
+    	"AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    	"AbilityCastAnimation"          "ACT_DOTA_GENERIC_CHANNEL_1"
+    	"AbilityTextureName"            "ability_pocket_shop"   
+    	"IsOnCastBar"                   "1"
+    	"MaxLevel"                      "1"
+    	"AbilityCastRange"              "0"
+    	"AbilityManaCost"				"0"
+		"AbilityCastPoint"				"0.4"
+		"AbilityValues"
+		{
+			"duration"					"15"
+			"AbilityAoE"				"350"
+			"BonusNightVision"			"450"
+			"AbilityCooldown"
+			{
+				"value"						 "135"
+			}
+		}
+	}
+	
+	"ability_power_courier"
+	{
+		"BaseClass"                     "ability_lua"
+    	"ScriptFile"                    "abilities/ability_power_courier"
+    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    	"AbilityUnitTargetType"         "DOTA_UNIT_TARGET_FLAG_NONE"
+    	"AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    	"AbilityCastAnimation"          "ACT_DOTA_GENERIC_CHANNEL_1"
+    	"AbilityTextureName"            "ability_power_courier"   
+    	"IsOnCastBar"                   "1"
+    	"MaxLevel"                      "1"
+    	"AbilityCastRange"              "0"
+    	"AbilityManaCost"				"0"
+	}
+	
+	"ability_tower_protection"
+	{
+		"BaseClass"                     "ability_lua"
+    	"ScriptFile"                    "abilities/ability_tower_protection"
+    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    	"AbilityUnitTargetType"         "DOTA_UNIT_TARGET_BUILDING"
+    	"AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    	"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_INVULNERABLE | DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+    	"AbilityCastAnimation"          "ACT_DOTA_GENERIC_CHANNEL_1"
+    	"AbilityTextureName"            "ability_tower_protection"   
+    	"IsOnCastBar"                   "1"
+    	"MaxLevel"                      "1"
+    	"AbilityCastRange"              "1200"
+    	"AbilityManaCost"				"0"
+    	
+    	"AbilityValues"
+		{
+			"duration"					"30"
+			"AbilityAoE"				"1200"
+			"Armor"						"5"
+			"HPregen"					"3"
+			"AbilityCooldown"
+			{
+				"value"						 "90"
+			}
+		}
+	}	
+	
+	"ability_magic_hat"
+	{
+		"BaseClass"                     "ability_lua"
+    	"ScriptFile"                    "abilities/ability_magic_hat"
+    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    	"AbilityUnitTargetType"         "DOTA_UNIT_TARGET_FLAG_NONE"
+    	"AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    	"AbilityCastAnimation"          "ACT_DOTA_GENERIC_CHANNEL_1"
+    	"AbilityTextureName"            "ability_magic_hat"   
+    	"IsOnCastBar"                   "1"
+    	"MaxLevel"                      "1"
+    	"AbilityCastRange"              "0"
+    	"AbilityManaCost"				"0"
+    	
+    	"AbilityValues"
+		{
+			"duration"					"30"
+			"AbilityAoE"				"0"
+			
+			"AbilityCooldown"
+			{
+				"value"						 "120"
+			}
+		}
+	}
+	"ability_killer_sense"
+	{
+		"BaseClass"                     "ability_lua"
+    	"ScriptFile"                    "abilities/ability_killer_sense"
+    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT "
+    	"AbilityUnitTargetType"         "DOTA_UNIT_TARGET_FLAG_NONE"
+    	"AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    	"AbilityCastAnimation"          "ACT_DOTA_IDLE"
+    	"AbilityTextureName"            "ability_killer_sense"   
+    	"IsOnCastBar"                   "1"
+    	"MaxLevel"                      "1"
+    	"AbilityCastRange"              "1800"
+    	"AbilityManaCost"				"0"
+    	
+    	"AbilityValues"
+		{
+			"duration"					"3"
+			"AbilityAoE"				"1800"
+			
+			"AbilityCooldown"
+			{
+				"value"						 "60"
+			}
+		}
+	}	
+	"ability_underwhelm"
+	{
+		"BaseClass"                     "ability_lua"
+    	"ScriptFile"                    "abilities/ability_underwhelm"
+    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    	"AbilityUnitTargetType"         "DOTA_UNIT_TARGET_FLAG_NONE"
+    	"AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    	"AbilityCastAnimation"          "ACT_DOTA_IDLE"
+    	"AbilityTextureName"            "ability_underwhelm"   
+    	"IsOnCastBar"                   "1"
+    	"MaxLevel"                      "1"
+    	"AbilityCastRange"              "1200"
+    	"AbilityManaCost"				"0"
+    	
+    	"AbilityValues"
+		{
+			"Armor"						"0.5"
+			"AttackSpeed"				"4"
+			"AbilityAoE"				"1200"
+			
+			"AbilityCooldown"
+			{
+				"value"						 "0"
+			}
+		}
+	}	
+	"ability_mistwoods_wayfarer"
+	{
+		"BaseClass"                     "ability_lua"
+    	"ScriptFile"                    "abilities/ability_mistwoods_wayfarer"
+    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    	"AbilityUnitTargetType"         "DOTA_UNIT_TARGET_FLAG_NONE"
+    	"AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    	"AbilityCastAnimation"          "ACT_DOTA_IDLE"
+    	"AbilityTextureName"            "Scurry_icon"   
+    	"IsOnCastBar"                   "1"
+    	"MaxLevel"                      "2"
+    	"LevelsBetweenUpgrades" 		"9999"
+    	"AbilityCastRange"              "0"
+    	"AbilityManaCost"				"0"
+    	"HasScepterUpgrade" 			"1"
+    	
+    	"AbilityValues"
+		{
+			"AbilityAoE"				"275 350"
+			
+			"MaximumStacks"				"5 10"
+			"LingerTimer"				"2 3"
+			"GainTimer"					"3 2"
+			"BaseAgi"					"2"
+			"BonusAgi"					"1 1.5"
+			
+			
+			"AttackRangeBonus"			"6 9"
+			"VisionBase"				"225"
+			"VisionBonus"				"10"
+			
+			
+			"AbilityCooldown"
+			{
+				"value"						 "0"
+			}
+		}
+	}
+	"ability_counter_attack_vision"
+	{
+		"BaseClass"                     "ability_lua"
+    	"ScriptFile"                    "abilities/ability_counter_attack_vision"
+    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    	"AbilityUnitTargetType"         "DOTA_UNIT_TARGET_FLAG_NONE"
+    	"AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    	"AbilityCastAnimation"          "ACT_DOTA_IDLE"
+    	"AbilityTextureName"            "Counter_Vision"   
+    	"IsOnCastBar"                   "1"
+    	"MaxLevel"                      "1"
+    	"AbilityCastRange"              "0"
+    	"AbilityManaCost"				"0"
+    	
+    	"AbilityValues"
+		{
+			"VisionDuration"				"4"
+			
+			
+			"AbilityCooldown"
+			{
+				"value"						 "0"
+			}
+		}
+	}
+	"broodmother_spin_web"
+	{
+		"AbilityManaCost"				"20"
+		"AbilityCharges"				"6 8 10 12"
+		"AbilityChargeRestoreTime"	
+		{
+			"value"				"23"
+		}
+		"count"					
+		{
+			"value"				"4 6 8 10"
+			"special_bonus_unique_broodmother_6" "+2"
+		}
+	}	
+	
+	"ability_key_tuning"
+	{
+		"BaseClass"                     "ability_lua"
+    	"ScriptFile"                    "abilities/ability_key_tuning"
+    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    	"AbilityUnitTargetType"         "DOTA_UNIT_TARGET_FLAG_NONE"
+    	"AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    	"AbilityCastAnimation"          "ACT_DOTA_IDLE"
+    	"AbilityTextureName"            "modifier_key_tuning"   
+    	"IsOnCastBar"                   "1"
+    	"MaxLevel"                      "1"
+    	"AbilityCastRange"              "0"
+    	"AbilityManaCost"				"0"
+    	
+    	"AbilityValues"
+		{
+			"MaxRange"						"1500"
+			"MinRange"						"300"
+			
+			"ArmorMod"						"0.5"
+			"ResistMod"						"1"
+			
+			
+			
+			"AbilityCooldown"
+			{
+				"value"						 "0"
+			}
+		}
+	}	
+	"ability_looting_bounty"
+	{
+		"BaseClass"                     "ability_lua"
+    	"ScriptFile"                    "abilities/ability_looting_bounty"
+    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    	"AbilityUnitTargetType"         "DOTA_UNIT_TARGET_FLAG_NONE"
+    	"AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    	"AbilityCastAnimation"          "ACT_DOTA_IDLE"
+    	"AbilityTextureName"            "modifier_looting_bounty"   
+    	"IsOnCastBar"                   "1"
+    	"MaxLevel"                      "1"
+    	"AbilityCastRange"              "0"
+    	"AbilityManaCost"				"0"
+    	
+    	"AbilityValues"
+		{
+			"AbilityCooldown"
+			{
+				"value"						 "0"
+			}
+		}
+	}
+}

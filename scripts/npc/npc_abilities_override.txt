@@ -1,0 +1,7 @@
+"DOTAAbilities"
+{
+	"Version"		"1"
+	
+	
+	"item_faerie_fire"               "REMOVE"
+}

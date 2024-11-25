@@ -1,0 +1,119 @@
+"neutral_items"
+{
+	"1"
+	{
+		"drop_rates"
+		{
+			"99:00"
+			{
+				"0" "14"
+				"1" "14"
+				"2" "14"
+				"3" "14"
+				"4" "14"
+			}
+		}
+		
+		"items"
+		{			
+			"item_molotov"			  			"0"		
+			"item_snare"			 			"0"	
+			"item_bottle"			  			"0"
+			"item_flare_gun"				  	"0"
+			"item_slowing_veins"			  	"0"
+		}
+	}
+	"2"
+	{
+		"drop_rates"
+		{
+			"99:00"
+			{
+				"0" "10"
+				"1" "10"
+				"2" "10"
+				"3" "10"
+				"4" "10"
+			}
+		}
+
+		"items"
+		{
+			"item_molotov"			  			"0"		
+			"item_snare"			 			"0"	
+			"item_shinobi_mask"			  		"0"
+			"item_flashbang"				 "0"
+			"item_slowing_veins"			  	"0"
+		}
+	}
+	"3"
+	{
+		"drop_rates"
+		{
+			"99:00"
+			{
+				"0" "10"
+				"1" "10"
+				"2" "10"
+				"3" "10"
+				"4" "10"
+			}
+		}
+
+		"items"
+		{			
+			"item_molotov"			  			"0"		
+			"item_snare"			 			"0"	
+			"item_bottle"			  			"0"
+			"item_flare_gun"				  	"0"
+			"item_slowing_veins"			  	"0"
+		}
+	}
+	"4"
+	{	
+		"drop_rates"
+		{
+			"99:00"
+			{
+				"0" "10"
+				"1" "10"
+				"2" "10"
+				"3" "10"
+				"4" "10"
+			}
+		}
+
+		"items"
+		{			
+			"item_molotov"			  			"0"		
+			"item_snare"			 			"0"	
+			"item_shinobi_mask"			  		"0"
+			"item_flashbang"				"0"
+			"item_slowing_veins"			  	"0"
+		}
+	}
+	"5"
+	{
+		"drop_rates"
+		{
+			"99:00"
+			{
+				"0" "10"
+				"1" "10"
+				"2" "10"
+				"3" "10"
+				"4" "10"
+			}
+		}
+
+		"items"
+		{	
+			
+			"item_molotov"			  			"0"		
+			"item_snare"			 			"0"	
+			"item_bottle"			  			"0"
+			"item_flare_gun"				  	"0"
+			"item_slowing_veins"			  	"0"
+		}
+	}
+}
